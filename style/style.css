@@ -1,0 +1,144 @@
+.background{
+    background-color: #fff;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+
+}
+.main{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 40%;
+}
+.headerline{
+    color: #594E3C;
+    font-size: 40px;
+    margin: 20px 20vw 20px 0px;
+    padding: 20px ;
+    background-color: rgb(217, 151, 37);
+    border-radius: 0px 10px 10px 0 ;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.addbtn{
+    width: 100px;
+    height: 40px;
+    background-color: rgb(217, 151, 37);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.editbtn, .delbtn{
+    background-color: #33302B;
+    width: 60px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+.addbooktitle{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.inputTitle{
+    background-color: #eba834;
+    margin:10px 30% 0 0;
+    padding: 5px ;
+    border-radius: 5px 5px 0px 0px ;
+    font-size: 16px;
+    font-weight: bold;
+    color: #33302B;
+    font-family: 'Noto Sans TC', sans-serif;
+
+}
+.inputPlace{
+    background-color: #e4e4e4;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    border: 3px solid #3d3d3d;
+    border-radius: 0 5px 5px 5px;
+}
+
+.booklist-title {
+    font-size: 20px;
+    margin-bottom: 12px;
+    font-family: 'Noto Sans TC', sans-serif;
+    color: #594E3C;
+}
+.booklist-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.booklist-head {
+    background-color: #D99725;
+    color: #33302B;
+}
+.booklist-th {
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+.booklist-body td {
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+.booklist-body tr:hover {
+    background-color: #f5f1e8;
+}
+.booklist-body button {
+    margin: 0 4px;
+}
+
+@media (max-width: 768px) {
+    .booklist-table {
+        font-size: 12px;
+    }
+
+    .booklist-th,
+    .booklist-body td {
+        padding: 6px;
+    }
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 6px;
+    }
+
+    .editbtn, .delbtn {
+        width: 50px;
+        height: 28px;
+        font-size: 12px;
+    }
+}
+    
